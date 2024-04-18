@@ -8,7 +8,13 @@ export default {
     extend: {
       opacity: {
         '9': '.09',
-      }
+      },
+      lineHeight:{
+        '60':'60px',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -4,7 +4,7 @@ import Love from "./Love";
 
 export default function Footer(){
     return(
-        <div className="flex flex-col w-4/5 h-[314px] px-[24px] py-[24px] border rounded-lg bg-[#F0F1F5]">
+        <div className="flex flex-col w-4/5 h-[314px] px-[24px] py-[24px] border rounded-lg bg-[#F0F1F5] mt-16">
          <div className="w-full flex justify-end"><Love/></div>
          <div className="flex items-center justify-between">
             <Logo/>
