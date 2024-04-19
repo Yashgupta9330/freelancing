@@ -18,14 +18,14 @@ export default function Plays(){
                 </path>
             </svg>
            </div>
-           <div>
+           <a href="https://play.google.com/store/apps/details?id=com.sai.mcq_expert">
             <div class="text-xs">
                 GET IT ON
             </div>
             <div class="-mt-1 font-sans text-xl font-semibold">
             Google Play
         </div>
-       </div>
+        </a>
       </button>
    )
 }
