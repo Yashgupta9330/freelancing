@@ -1,6 +1,6 @@
 import left from "../assets/left.png"
 import right1 from "../assets/right1.png"
-import center from "../assets/center.jpg"
+import center1 from "../assets/center1.jpg"
 import { FaArrowRight } from "react-icons/fa6";
 export default function Content(){
     return(
@@ -14,7 +14,7 @@ export default function Content(){
         <span className="font-bold">Start for Free</span>
         <FaArrowRight  className="font-bold text-[20px] leading-[100%]"/>
         </button>
-        <img src={center} alt="center" className="w-[70%] z-[1]"/>
+        <img src={center1} alt="center" className="w-[70%] z-[1] rounded-lg"/>
         <img src={left} alt="left"  className="absolute left-0 top-[30%]  w-[25%] xl:w-[300px]" />
         <img src={right1} alt="right"  className="absolute right-0 bottom-0 w-[50%] xl:w-[600px]" />
         </div>
