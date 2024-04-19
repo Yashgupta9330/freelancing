@@ -1,10 +1,8 @@
 import logo2 from "../assets/logo2.png"
 
 
-export default function Logo(){
+export default function Logo({h='253',w='300'}){
     return(
-      <div className="w-[300px] h-[253px]">
-      <img src={logo2} className="w-full h-full" alt="logo" />
-      </div>
+      <img src={logo2} width={w} height={h}  alt="logo" />
     );
 }

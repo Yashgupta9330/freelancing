@@ -4,7 +4,7 @@ import Love from "./Love";
 export default function Navbar(){
     return(
         <div className="w-full h-[144px] flex items-center justify-center  font-roboto border">
-        <div className="w-4/5 h-[85px] rounded-lg bg-[#702DFF] bg-opacity-[.09] py-[24px] px-[24px]">
+        <div className="w-[95%] lg:w-4/5 h-[85px] rounded-lg bg-[#702DFF] bg-opacity-[.09] py-[24px] px-[24px]">
          <div className="flex items-center justify-between">
             <div className="flex gap-8 text-black">
              <span className="text-3xl font-bold text-[#20294C]">Nikaru</span>

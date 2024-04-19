@@ -11,6 +11,7 @@ export default {
       },
       lineHeight:{
         '60':'60px',
+        '30':'50px',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
