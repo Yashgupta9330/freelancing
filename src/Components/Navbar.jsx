@@ -4,16 +4,7 @@ import Love from "./Love";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const navItems = ["About us", "Board of Love", "Plugins", "Contact Us"];
-  const handleOutsideClick = (e) =>{
-    setNav((prev) => !prev)
-  }
-  useEffect(()=>{
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => {
-    document.removeEventListener("mousedown", handleOutsideClick);
-    }
-
-  },[]);
+  
   return (
     <div className="w-full min-h-[144px] flex items-center justify-between md:justify-center font-roboto border">
       <div className="w-[95%] lg:w-4/5 min-h-[85px] rounded-lg bg-[#702DFF] bg-opacity-[.09] py-[24px] px-[24px]">
