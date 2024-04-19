@@ -4,13 +4,13 @@ import center1 from "../assets/center1.jpg"
 import { FaArrowRight } from "react-icons/fa6";
 export default function Content(){
     return(
-        <div className="w-full px-20 flex flex-col items-center gap-[32px] relative mb-32">
-         <h1 className="text-4xl lg:text-5xl xl:text-[72px] font-extrabold" style={{fontFamily: 'Source Code Pro, monospace' }}>Introducing Nikaru Widgets!</h1>
+        <div className="w-full px-5 md:px-20 flex flex-col items-center gap-[32px] relative mb-32">
+         <h1 className="text-4xl text-center text-[#0F172A] lg:text-5xl xl:text-[72px] font-extrabold" style={{fontFamily: 'Source Code Pro, monospace' }}>Introducing Nikaru Widgets!</h1>
          <div className="w-full font-regular md:text-[16px] lg:text-[18px] flex flex-col items-center justify-center text-center">
             <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.</p>
             <p>Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
         </div>
-        <button className="flex flex items-center justify-center rounded-full px-6 py-4 gap-3 text-[#FFFFFF] bg-[#7C3AED]">
+        <button className="flex items-center justify-center rounded-full px-6 py-4 gap-3 text-[#FFFFFF] bg-[#7C3AED]">
         <span className="font-bold">Start for Free</span>
         <FaArrowRight  className="font-bold text-[20px] leading-[100%]"/>
         </button>

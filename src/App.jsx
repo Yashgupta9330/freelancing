@@ -14,32 +14,30 @@ import Youtube from './Components/Youtube'
 
 
 function App() {
-  
-
   return (
     <>
     <div className='w-full min-h-screen'>
     <div className='bg-[#F0F1F5]'>
      <Navbar/>
-     <div className="w-full flex flex-col items-center justify-center rounded-lg relative">
-      <Logo/>
-      <Plays/>
-      <AI/>
-      <Merge/>
-      <Qr/>
-    </div>
+      <div className="w-full flex flex-col items-center justify-center rounded-lg relative">
+        <Logo classname='h-[253px] w-[253px] ' />
+        <Plays/>
+        <AI/>
+        <Merge/>
+        <Qr/>
+      </div>
     </div> 
     <div className="w-full flex flex-col items-center justify-center mb-12 mt-12">
-    <Card/>
+      <Card/>
     </div>
     <Content/>
     <Youtube/>
     <div className="w-full flex flex-col items-center justify-center mb-12 mt-12">
-    <Download/>
+      <Download/>
     </div>
     <div className="w-full flex flex-col items-center justify-center mb-4 mt-4">
-    <Footer/>
-   </div>
+      <Footer/>
+    </div>
    </div>
   </>
   )
