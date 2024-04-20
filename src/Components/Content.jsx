@@ -14,9 +14,9 @@ export default function Content(){
         <span className="font-bold">Start for Free</span>
         <FaArrowRight  className="font-bold text-[20px] leading-[100%]"/>
         </button>
-        <img src={center1}  data-aos="zoom-in" alt="center" className="w-[70%] z-[1] rounded-lg"/>
-        <img src={left} alt="left"  className="absolute left-0 top-[50%] sm:top-[30%]  w-[25%] xl:w-[300px]" />
-        <img src={right1} alt="right"  className="absolute right-0 bottom-0 w-[50%] xl:w-[600px]" />
+        <img src={center1}  data-aos="zoom-in" alt="center" className="w-[95%] md:w-[70%] z-[1] rounded-lg"/>
+        <div className="hidden md:block"> <img src={left} alt="left"  className="absolute left-0 top-[50%] sm:top-[30%]  w-[25%] xl:w-[300px]" /></div>
+        <div className="hidden md:block">  <img src={right1} alt="right"  className="absolute right-0 bottom-0 w-[50%] xl:w-[600px]" /></div>
         </div>
     );
 }

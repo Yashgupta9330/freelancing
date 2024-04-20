@@ -13,6 +13,7 @@ import Qr from './QR'
 import Youtube from './Youtube'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Carausel from './Caraursel'
 
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <Qr/>
       </div>
     </div> 
+    <Carausel/>
     <div className="w-full flex flex-col items-center justify-center mb-12 mt-12">
       <Card/>
     </div>

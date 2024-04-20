@@ -6,7 +6,7 @@ export default function Navbar() {
   const navItems = ["About us", "Board of Love", "Plugins", "Contact Us"];
   
   return (
-    <div className="w-full min-h-[144px] flex items-center justify-between md:justify-center font-roboto border mr-0 ml-4 md:ml-0 ">
+    <div className="w-full min-h-[144px] flex items-center justify-between md:justify-center font-roboto mr-0 ml-4 md:ml-0 ">
       <div className="w-[95%] lg:w-4/5 min-h-[85px] rounded-lg bg-[#702DFF] bg-opacity-[.09] py-[24px] px-[24px]">
         <div className="flex items-center justify-between">
           <div className="flex gap-8 text-black">
