@@ -1,56 +1,112 @@
 @property --gradient-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
   }
-  
-  :root {
-    --clr-1: #052b2f;
-    --clr-2: #073438;
-    --clr-3: #0e4b50;
-    --clr-4: #2d8f85;
-    --clr-5: #637c54;
-  }
+
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#7EA1FF,
+		#8576FF,
+		#FFEBB2,
+		#E59BE9,
+		#1C1678,
+		#BC7FCD,
+		#7EA1FF,
+		#7EA1FF,
+		#8576FF,
+		#8576FF
+	);
+	--clr-1: #052b2f;
+	--clr-2: #073438;
+	--clr-3: #0e4b50;
+	--clr-4: #2d8f85;
+	--clr-5: #637c54;
+}
+
+.shadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	width: 400px;
+	height: 250px;
+	background: linear-gradient(0deg, #000, #262626);
+}
+.shadow:before,
+.shadow:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+
   
   
   
   .card {
-    height: 60vh;
-    aspect-ratio: 1 / 1.5;
-    background: var(--clr-1);
-    border-radius: 0.5rem;
-  
-    position: relative;
+	aspect-ratio: 1 / 1.5;
+	background: var(--clr-1);
+	border-radius: 0.5rem;
+	position: relative;
   }
   
   .card::before,
   .card::after {
-    content: "";
-    position: absolute;
-    inset: -0.5rem;
-    z-index: -1;
-    background: conic-gradient(
-      from var(--gradient-angle),
-      var(--clr-3),
-      var(--clr-4),
-      var(--clr-5),
-      var(--clr-4),
-      var(--clr-3)
-    );
-    border-radius: inherit;
-    animation: rotation 20s linear infinite;
+	content: "";
+	position: absolute;
+	inset: -0.5rem;
+	z-index: -1;
+	background: conic-gradient(
+	  from var(--gradient-angle),
+	  var(--clr-3),
+	  var(--clr-4),
+	  var(--clr-5),
+	  var(--clr-4),
+	  var(--clr-3)
+	);
+	border-radius: inherit;
+	animation: rotation 20s linear infinite;
   }
   
   .card::after {
-    filter: blur(3.5rem);
+	filter: blur(3.5rem);
   }
   
   @keyframes rotation {
-    0% {
-      --gradient-angle: 0deg;
-    }
-    100% {
-      --gradient-angle: 360deg;
-    }
+	0% {
+	  --gradient-angle: 0deg;
+	}
+	100% {
+	  --gradient-angle: 360deg;
+	}
   }
   

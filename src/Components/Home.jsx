@@ -18,9 +18,7 @@ import Carausel from './Caraursel'
 
 export default function Home() {
     useEffect(() => {
-        AOS.init({
-          duration: 1000,
-        });
+        AOS.init();
         AOS.refresh();
       }, []);
   return (
