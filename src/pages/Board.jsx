@@ -1,5 +1,5 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 export default function Board(){
     return( 
