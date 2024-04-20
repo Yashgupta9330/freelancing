@@ -11,7 +11,7 @@ function App() {
    <div className='w-full min-h-screen'>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/board" element={<Board/>}/>
+      <Route path="/Board" element={<Board/>}/>
     </Routes>
     </div>
   </>
