@@ -6,7 +6,7 @@ export default function Navbar() {
   const navItems = ["About us", "Board of Love", "Plugins", "Contact Us"];
   
   return (
-    <div className="w-full min-h-[144px] flex items-center justify-between md:justify-center font-roboto border">
+    <div className="w-full min-h-[144px] flex items-center justify-between md:justify-center font-roboto border mr-0 ml-4 md:ml-0 ">
       <div className="w-[95%] lg:w-4/5 min-h-[85px] rounded-lg bg-[#702DFF] bg-opacity-[.09] py-[24px] px-[24px]">
         <div className="flex items-center justify-between">
           <div className="flex gap-8 text-black">
@@ -18,7 +18,9 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="h-full flex items-center gap-5">
-            <Love />
+            <div className="hidden md:inline-block">
+              <Love />
+              </div>
             <div onClick={() => setNav(!nav)} className="block md:hidden">
               {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
@@ -26,10 +28,13 @@ export default function Navbar() {
             <ul
               className={
                 nav
-                  ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r text-white border-r-gray-900 bg-[#9333EA]  ease-in-out duration-500 z-50 "
+                  ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r text-white border-r-gray-900 bg-[#28143a]  ease-in-out duration-500 z-50 "
                   : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
               }
             >
+              <li className="p-4" >
+              <Love />
+              </li>
               {/* Mobile Navigation Items */}
               {navItems.map((item) => (
                 <li
