@@ -1,5 +1,5 @@
 
-
+import "../index.css"
 
 export default function Youtube(){
     return(
@@ -18,7 +18,7 @@ export default function Youtube(){
         data-aos-duration="2000"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowFullScreen
-        className="rounded-lg md:w-[500px] w-[90%] h-[250px] sm:h-[280px] md:h-[300px] shadow-[40px_-15px_70px_-15px] shadow-blue-200"
+        className="card rounded-lg md:w-[500px] w-[90%] h-[250px] sm:h-[280px] md:h-[300px]"
         >      
         </iframe>
         </div>
