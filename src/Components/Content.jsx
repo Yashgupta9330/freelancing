@@ -15,7 +15,7 @@ export default function Content(){
         <span className="font-bold">Start for Free</span>
         <FaArrowRight  className="font-bold text-[20px] leading-[100%]"/>
         </button>
-        <div className="shadow"><img src={center1} alt="center" className=" w-full animate z-[1] rounded-lg"/></div>
+        <div className="rounded-lg w-[80%] sm:w-[70%] shadow  z-[1]"><img src={center1} alt="center" className="w-full h-full rounded-lg"/></div>
         <div className="hidden md:block"> <img src={left} alt="left"  className="absolute left-0 top-[50%] sm:top-[30%]  w-[25%] xl:w-[300px]" /></div>
         <div className="hidden md:block">  <img src={right1} alt="right"  className="absolute right-0 bottom-0 w-[50%] xl:w-[600px]" /></div>
         </div>

@@ -6,10 +6,8 @@ import Content from './Content'
 import Download from './Download'
 import Footer from './Footer'
 import Logo from './Logo'
-import Merge from './Merge'
 import Navbar from './Navbar'
 import Plays from './Play'
-import Qr from './QR'
 import Youtube from './Youtube'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,8 +30,6 @@ export default function Home() {
         <Logo classname='h-[253px] w-[253px] ' />
         <Plays/>
         <AI/>
-        <Merge/>
-        <Qr/>
       </div>
     </div> 
     <Carausel/>
