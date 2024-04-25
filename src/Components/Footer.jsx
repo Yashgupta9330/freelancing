@@ -4,10 +4,10 @@ import Love from "./Love";
 
 export default function Footer(){
     return(
-        <div className="flex flex-col w-[95%] lg:w-4/5 min-h-[314px] px-[24px] py-[24px] border rounded-lg bg-[#F0F1F5] mt-16">
+        <div className="flex flex-col w-full md:w-[95%] lg:w-4/5 min-h-[314px] px-[12px] md:px-[24px] py-[24px] border rounded-lg bg-[#F0F1F5] mt-16">
          <div className="w-full flex justify-center md:justify-end mb-8 md:mb-0 "><Love/></div>
          <div className="flex items-center justify-between w-full">
-            <Logo classname="sm:h-[208px] sm:w-[208px] h-[150px] w-[150px] "  />
+            <Logo classname="sm:h-[208px] sm:w-[208px] h-[140px] w-[140px] "  />
             <div className="flex h-full items-center justify-between  sm:items-center sm:flex-row flex-col md:w-[60%]">
             <div className="flex flex-col gap-2">
                 <span className="font-bold text-2xl">Legal</span>
