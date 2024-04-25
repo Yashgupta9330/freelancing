@@ -48,7 +48,10 @@ export default function Card() {
         style={{ whiteSpace: "pre-line", display: "block", fontFamily: 'Source Code Pro, monospace' }}
         omitDeletionAnimation={true}
         />
-          <p className="py-2 px-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 md:text-left font-inter">
+          <p 
+             data-aos="fade-up" 
+             data-aos-delay={viewed1? 1000 : 0} 
+            className="py-2 px-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 md:text-left font-inter">
             ZuAI app is your new study buddy that helps you <span className="font-bold">prepare, practise, revise, and learn smartly</span>. Now you can master your subjects rather than judging study tasks.
           </p>
         </div>}
@@ -63,7 +66,10 @@ export default function Card() {
         <div ref={ref2}>
         {viewed2 && <div ref={ref2}  className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
           <TypeAnimation sequence={['Stop bored Studying',1000]} cursor={true} className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]" style={{ whiteSpace: "pre-line", display: "block", fontFamily: 'Source Code Pro, monospace' }} omitDeletionAnimation={true} />
-          <p className="py-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
+          <p 
+            data-aos="fade-up" 
+            data-aos-delay={viewed2? 1000 : 0} 
+            className="py-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
             Textbooks are boring, you will sleep faster than learning concepts and clear doubts. With ZuAI, say hello to interactive learning experiences that make you forget you're even studying. Who knew learning could be this fun (or that textbooks could be this jealous).
           </p>
         </div> }
@@ -78,7 +84,10 @@ export default function Card() {
         <div ref={ref3}>
         {viewed3 && <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
           <TypeAnimation sequence={['Stop Feeling Lonely',1000]}  cursor={true} className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]" style={{ whiteSpace: "pre-line", display: "block", fontFamily: 'Source Code Pro, monospace' }} omitDeletionAnimation={true} />
-          <p className="py-2 md:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
+          <p 
+            data-aos="fade-up" 
+            data-aos-delay={viewed3? 1000 : 0} 
+            className="py-2 md:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
             Remember that angry time, when no one was Remember that angry time, when no one was parent, and no friends? ZuAI is 24X7 there for you, it's a teacher that you always wanted and <span className='text-xs'> friend you never had.</span>
           </p>
         </div>}
@@ -104,7 +113,7 @@ export default function Card() {
   ) }
   </div>
 
-      </div>
+    </div>
     </div>
   );
 }
