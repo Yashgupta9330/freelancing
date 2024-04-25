@@ -26,7 +26,7 @@ export default function Home() {
      <div className='w-full flex items-center justify-center mx-auto'>
      <Navbar/>
       </div>
-      <div className="w-full flex flex-col items-center justify-center rounded-lg relative">
+      <div className="w-full flex flex-col items-center justify-center rounded-lg relative mt-32">
         <Logo classname='h-[253px] w-[253px] ' />
         <Plays/>
         <AI/>
