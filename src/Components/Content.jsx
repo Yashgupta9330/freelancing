@@ -11,7 +11,7 @@ export default function Content(){
             <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.</p>
             <p>Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
         </div>
-        <button  data-aos="zoom-in" className="flex items-center justify-center rounded-full px-6 py-4 gap-3 text-[#FFFFFF] bg-[#7C3AED]">
+        <button className="flex items-center justify-center rounded-full px-6 py-4 gap-3 text-[#FFFFFF] bg-[#7C3AED]  hover:scale-110 transition-transform duration-300">
         <span className="font-bold">Start for Free</span>
         <FaArrowRight  className="font-bold text-[20px] leading-[100%]"/>
         </button>

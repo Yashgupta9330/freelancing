@@ -11,8 +11,7 @@ export default function Card(){
         </div>
          <div className="pl-4 md:px-0 flex flex-col items-center justify-center w-[95%] md:w-[544px] text-[#20294C]  ">
          <TypeAnimation
-          sequence={['Stop worrying about exams',1000,""]}
-          repeat={Infinity} 
+          sequence={['Stop worrying about exams',1000]}
           cursor={true}
           className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]"
           style={{
@@ -34,8 +33,7 @@ export default function Card(){
         </div>
          <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
          <TypeAnimation
-          sequence={['Stop bored Studying',1000,""]}
-          repeat={Infinity} 
+          sequence={['Stop bored Studying',1000]}
           cursor={true}
           className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]"
           style={{
@@ -56,8 +54,7 @@ export default function Card(){
         </div>
          <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
          <TypeAnimation
-          sequence={['Stop Feeling Lonely',1000,""]}
-          repeat={Infinity} 
+          sequence={['Stop Feeling Lonely',1000]}
           cursor={true}
           className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]"
           style={{
@@ -78,8 +75,7 @@ export default function Card(){
         </div>
          <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
          <TypeAnimation
-          sequence={['Stop Wasting your Time',1000,""]}
-          repeat={Infinity} 
+          sequence={['Stop Wasting your Time',1000]}
           cursor={true}
           className="font-semibold text-4xl lg:text-6xl py-2 lg:py-5 leading-30 lg:leading-60 tracking-[-1.92px]"
           style={{
@@ -97,4 +93,3 @@ export default function Card(){
         </div>
     );
 }
-
