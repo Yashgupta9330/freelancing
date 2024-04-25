@@ -23,7 +23,7 @@ export default function Home() {
     <>
     <div className='w-full min-h-screen'>
     <div className='bg-[#F0F1F5]'>
-     <div className='w-full flex items-center justify-center mx-auto'>
+     <div className='w-full flex items-center justify-center'>
      <Navbar/>
       </div>
       <div className="w-full flex flex-col items-center justify-center rounded-lg relative mt-32">
