@@ -160,6 +160,17 @@
   }
 
 
-  .bg{
-	background-image: url('../assets/bgChat.png');
-  }
+  
+
+  @keyframes playOnce {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.play-once {
+    animation: playOnce 1s forwards; /* Change the animation duration as needed */
+}

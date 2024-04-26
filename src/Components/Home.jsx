@@ -12,7 +12,7 @@ import Youtube from './Youtube';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Carausel from './Caraursel';
-import bgChat2 from "../assets/bgChat2.png";
+import bgChat23 from "../assets/bgChat23.png";
 
 export default function Home() {
   useEffect(() => {
@@ -25,11 +25,11 @@ export default function Home() {
     <>
       <div className='w-full min-h-screen overflow-x-hidden'>
         <div className='bg-[#F0F1F5]'>
-          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain' style={{ backgroundImage: `url(${bgChat2})`}}>
+          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain bg-opacity-40' style={{ backgroundImage: `url(${bgChat23})`}}>
             <Navbar />
             <div className='mt-32'>
             <div className="w-full flex flex-col items-center justify-center rounded-lg ">
-              <Logo className='h-[253px] w-[253px]' />
+            <Logo classname='h-[263px] w-[263px]' />
               <Plays />
               <AI />
             </div>
