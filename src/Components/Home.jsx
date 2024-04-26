@@ -28,7 +28,7 @@ export default function Home() {
             <div className='w-full min-h-screen overflow-x-hidden'>
                 <div className=''>
                     {/* Dynamically set height and background image */}
-                    <div className='bg-[url(bgChat)]  bg-cover bg-center z-[100] w-full h-full' style={{ height: `${contentHeight}px`,backgroundImage: `url(${bgChat})` }}>
+                    <div className='bg-[url(bgChat)]  bg-cover bg-center z-[100] w-full h-[750px] sm:h-[720px]' style={{ backgroundImage: `url(${bgChat})` }}>
                         <div className='w-full flex items-center justify-center'>
                             <Navbar />
                         </div>
