@@ -158,3 +158,8 @@
   .snap-align-start {
 	scroll-snap-align: start;
   }
+
+
+  .bg{
+	background-image: url('../assets/bgChat.png');
+  }

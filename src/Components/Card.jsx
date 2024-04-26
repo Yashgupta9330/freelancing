@@ -40,7 +40,7 @@ export default function Card() {
           <img src={image123} alt="image-1" className="w-1/2 md:w-[357px]" />
         </div>
         <div ref={ref1}>
-        {viewed1 &&  <div className="pl-4 md:px-0 flex flex-col items-center justify-center w-[95%] md:w-[544px] text-[#20294C]">
+        {viewed1 &&  <div className="pl-2 md:px-0 flex flex-col items-center justify-center w-[95%] md:w-[544px] text-[#20294C]">
         <TypeAnimation
         sequence={["Stop worrying about exams",1000]}
         cursor={true}
