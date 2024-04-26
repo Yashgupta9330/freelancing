@@ -25,7 +25,8 @@ export default function Home() {
     <>
       <div className='w-full min-h-screen overflow-x-hidden'>
         <div className='bg-[#F0F1F5]'>
-          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain bg-opacity-40' style={{ backgroundImage: `url(${bgChat232})`}}>
+          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain bg-opacity-40 relative' style={{ backgroundImage: `url(${bgChat232})`}}>
+          <div className="bg w-[600px] h-[600px] rounded-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[-1] blur-[120px]"></div>
             <Navbar />
             <div className='mt-32'>
             <div className="w-full flex flex-col items-center justify-center rounded-lg ">

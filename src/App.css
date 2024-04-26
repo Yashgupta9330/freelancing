@@ -174,3 +174,15 @@
 .play-once {
     animation: playOnce 1s forwards; /* Change the animation duration as needed */
 }
+
+
+.container {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.bg{
+ background-image: radial-gradient(closest-side,#FFFFFF,#FFFFFF);
+}

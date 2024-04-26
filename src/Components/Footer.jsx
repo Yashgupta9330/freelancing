@@ -8,8 +8,8 @@ export default function Footer(){
          <div className="w-full flex justify-center md:justify-end mb-8 md:mb-0 "><Love/></div>
          <div className="flex items-center justify-between w-full">
             <Logo classname="sm:h-[208px] sm:w-[208px] h-1/3 w-1/3" foot='1' />
-            <div className="flex h-full items-center justify-between  sm:items-center sm:flex-row flex-col md:w-[60%]">
-            <div className=" text-left flex flex-col gap-2">
+            <div className="h-full flex flex-col sm:flex-row  items-start justify-between sm:items-center md:w-[60%] border">
+            <div className="text-left flex flex-col gap-2 items-start border">
                 <span className="font-bold text-2xl">Legal</span>
                 <span>Privacy</span>
                 <span>Terms and Condition</span>
