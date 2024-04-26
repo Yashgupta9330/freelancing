@@ -18,7 +18,7 @@ export default function Youtube(){
   data-aos-duration="2000"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
   allowFullScreen
-  className="rounded-lg animate-resize-width md:w-[500px] w-[90%] sm:h-[280px] md:h-[300px] "
+  className="rounded-lg animate-resize-width w-[70%] md:w-[500px]  sm:h-[250px] md:h-[300px] "
 >
 </iframe>
         </div>
