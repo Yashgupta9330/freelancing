@@ -33,14 +33,14 @@ export default function Card() {
   }, [inView1, inView2, inView3, inView4, viewed1, viewed2, viewed3, viewed4]);
 
   return (
-    <div className='md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-24 mt-24'>
+    <div className='md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-24'>
       {/* First Card */}
-      <div className="md:w-full w-[95%] flex flex-col md:flex-row sm:items-center justify-center md:justify-between">
+      <div className="md:w-full w-[95%] flex flex-col md:flex-row sm:items-center justify-start items-start md:justify-between">
         <div data-aos="fade-right" data-aos-duration="1000" className='md:px-12 lg:px-24 flex items-center justify-center'>
           <img src={image123} alt="image-1" className="w-1/2 md:w-[357px]" />
         </div>
         <div ref={ref1}>
-        {viewed1 &&  <div className="pl-2 md:px-0 flex flex-col items-center justify-center w-[95%] md:w-[544px] text-[#20294C]">
+        {viewed1 &&  <div className="pl-2 md:px-0 flex flex-col items-start justify-start w-[95%] md:w-[544px] text-[#20294C]">
         <TypeAnimation
         sequence={["Stop worrying about exams",1000]}
         cursor={true}
@@ -51,6 +51,7 @@ export default function Card() {
           <p 
              data-aos="fade-up" 
              data-aos-delay={viewed1? 1000 : 0} 
+             data-aos-once="true"
             className="py-2 px-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 md:text-left font-inter">
             ZuAI app is your new study buddy that helps you <span className="font-bold">prepare, practise, revise, and learn smartly</span>. Now you can master your subjects rather than judging study tasks.
           </p>
@@ -69,6 +70,7 @@ export default function Card() {
           <p 
             data-aos="fade-up" 
             data-aos-delay={viewed2? 1000 : 0} 
+            data-aos-once="true"
             className="py-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
             Textbooks are boring, you will sleep faster than learning concepts and clear doubts. With ZuAI, say hello to interactive learning experiences that make you forget you're even studying. Who knew learning could be this fun (or that textbooks could be this jealous).
           </p>
@@ -87,6 +89,7 @@ export default function Card() {
           <p 
             data-aos="fade-up" 
             data-aos-delay={viewed3? 1000 : 0} 
+            data-aos-once="true"
             className="py-2 md:py-5 font-regular text-xl lg:text-2xl leading-9 text-left font-inter">
             Remember that angry time, when no one was Remember that angry time, when no one was parent, and no friends? ZuAI is 24X7 there for you, it's a teacher that you always wanted and <span className='text-xs'> friend you never had.</span>
           </p>
@@ -105,6 +108,7 @@ export default function Card() {
       <p 
       data-aos="fade-up" 
       data-aos-delay={viewed4? 1000 : 0} 
+      data-aos-once="true"
       className="font-inter py-2 lg:py-5 font-regular text-xl lg:text-2xl leading-9 text-left"
     >
       Don't wait for someone to solve your doubts or go through the same things again to get a follow-up doubt cleared. ZuAI solves any doubt for every difficulty you face on the spot so that you don't waste time and keep going effectively.

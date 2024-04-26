@@ -12,7 +12,7 @@ import Youtube from './Youtube';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Carausel from './Caraursel';
-import bgChat23 from "../assets/bgChat23.png";
+import bgChat232 from "../assets/bgChat232.png";
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <div className='w-full min-h-screen overflow-x-hidden'>
         <div className='bg-[#F0F1F5]'>
-          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain bg-opacity-40' style={{ backgroundImage: `url(${bgChat23})`}}>
+          <div className='flex flex-col gap-32 z-[100] bg-repeat bg-contain bg-opacity-40' style={{ backgroundImage: `url(${bgChat232})`}}>
             <Navbar />
             <div className='mt-32'>
             <div className="w-full flex flex-col items-center justify-center rounded-lg ">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         </div>
         <Carausel />
-        <div className="w-full flex flex-col items-center justify-center mb-12 mt-12">
+        <div className="w-full flex flex-col items-center justify-center mb-8 mt-4">
           <Card />
         </div>
         <Content />
