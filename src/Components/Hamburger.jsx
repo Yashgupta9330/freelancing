@@ -22,10 +22,9 @@ export default function Hamburger() {
       </div>
 
       {/* Navbar component */}
-      <div className={`hidden md:block fixed top-0 left-0 w-full z-50 ${nav ? 'transform translate-y-0 opacity-100 transition-transform duration-500' : 'transform translate-y-[-100px] opacity-0 transition-transform duration-500'}`}>
-        {nav && <Navbar />}
+      <div className={`hidden md:block fixed top-0 left-0 w-full z-50 ${nav ? 'transition-top duration-500 ease-in-out top-[-100%]' : 'transition-top duration-1000 ease-in-out top-0'}`}>
+       {nav && <Navbar />}
       </div>
-
       <ul
         className={
           nav
