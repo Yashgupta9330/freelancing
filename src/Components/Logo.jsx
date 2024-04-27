@@ -6,7 +6,7 @@ export default function Logo({ classname, foot = '0' }) {
   
     return (
         <>
-            {foot === '0' ? (
+         {/*   {foot === '0' ? (
                 <img
                     src={output}
                     alt="logo"
@@ -14,7 +14,8 @@ export default function Logo({ classname, foot = '0' }) {
                 />
             ) : (
                 <img src={logo2} className={classname} />
-            )}
+            )}  */}
+            <img src={logo2} className={classname} />
         </>
     );
 }

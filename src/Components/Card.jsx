@@ -36,7 +36,7 @@ export default function Card() {
     <div className='md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-24'>
       {/* First Card */}
       <div className="md:w-full w-[95%] flex flex-col md:flex-row sm:items-center justify-start items-start md:justify-between">
-        <div data-aos="fade-right" data-aos-duration="1000" className='md:px-12 lg:px-24 flex items-center justify-center'>
+        <div data-aos="fade-right" data-aos-duration="1000" className='md:px-12 lg:px-24 flex items-center justify-center grow'>
           <img src={image123} alt="image-1" className="w-1/2 md:w-[357px]" />
         </div>
         <div ref={ref1}>
