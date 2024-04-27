@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function Content(){
     return(
-        <div  className="w-full px-5 md:px-20 flex flex-col items-center gap-[32px] relative mb-32 snap-always snap-center">
+        <div  className="w-full px-5 md:px-20 flex flex-col items-center gap-[32px] relative mb-32 snap-always snap-center mt-12">
          <h1 className="text-4xl text-center text-[#0F172A] lg:text-5xl xl:text-[72px] font-extrabold" style={{fontFamily: 'Source Code Pro, monospace' }}>Introducing Nikaru Widgets!</h1>
          <div className="w-full font-regular md:text-[16px] lg:text-[18px] flex flex-col items-center justify-center text-center z-10 ">
             <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.</p>
