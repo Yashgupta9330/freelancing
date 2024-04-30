@@ -1,9 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useInView } from "react-intersection-observer";
-import image123 from "../assets/image123.jpg";
-import image21 from "../assets/image21.jpg";
-import image23 from "../assets/image23.jpg";
+import Group8301 from "../assets/Group8301.png";
+import Group8303 from "../assets/Group8303.png";
+import Group8302 from "../assets/Group8302.png";
+import Group8304 from "../assets/Group8304.png";
+import Iphones from "../assets/Iphones.png";
+import iPhone from "../assets/iPhone.png";
 
 export default function Card() {
   const [ref1, inView1] = useInView();
@@ -32,16 +35,9 @@ export default function Card() {
   }, [inView1, inView2, inView3, inView4, viewed1, viewed2, viewed3, viewed4]);
 
   return (
-    <div className="md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-24">
+    <div className="md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-32">
       {/* First Card */}
-      <div className="md:w-full w-[95%] flex flex-col md:flex-row sm:items-center justify-start items-start md:justify-between">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          className="md:px-12 lg:px-24 flex items-center justify-center grow"
-        >
-          <img src={image123} alt="image-1" className="w-1/2 md:w-[357px]" />
-        </div>
+      <div className="md:w-full w-[95%] flex flex-col md:flex-row sm:items-center justify-start items-start md:justify-between gap-12 mt-12">
         <div ref={ref1}>
           {viewed1 && (
             <div className="pl-2 md:px-0 flex flex-col items-start justify-start w-[95%] md:w-[544px] text-[#20294C]">
@@ -68,17 +64,20 @@ export default function Card() {
             </div>
           )}
         </div>
+        {inView1 && (
+          <div className="w-[500px] relative ml-4 border">
+            <div className="absolute left-0 bottom-[-100px] animation-right-to-left">
+              <img src={Group8301} alt="Group" className="w-[450px]" />
+            </div>
+            <div className="absolute left-[250px] top-[-250px] animation-bottom-to-top">
+              <img src={Iphones} alt="iPhones" className="w-[250px] z-[100]" />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Second Card */}
-      <div className="flex flex-col md:flex-row-reverse sm:items-center justify-center md:justify-between w-[95%]">
-        <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          className="px-12 lg:px-24"
-        >
-          <img src={image21} alt="image-2" className="w-[357px]" />
-        </div>
+      <div className="flex flex-col md:flex-row-reverse sm:items-center justify-center md:justify-between w-[95%] gap-12">
         <div ref={ref2}>
           {viewed2 && (
             <div
@@ -110,17 +109,20 @@ export default function Card() {
             </div>
           )}
         </div>
+        {inView2 && (
+          <div className="w-[500px] relative ml-4 border">
+            <div className="absolute left-0 bottom-[-100px] animation-left-to-right">
+              <img src={Group8304} alt="Group" className="w-[450px]" />
+            </div>
+            <div className="absolute left-[200px] top-[-250px] animation-bottom-to-top">
+              <img src={Iphones} alt="iPhones" className="w-[250px] z-[100]" />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Third Card */}
-      <div className="flex flex-col md:flex-row sm:items-center justify-center md:justify-between w-[95%]">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          className="px-12 lg:px-24"
-        >
-          <img src={image23} alt="image-3" className="w-[357px]" />
-        </div>
+      <div className="flex flex-col md:flex-row sm:items-center justify-center md:justify-between w-[95%] gap-16">
         <div ref={ref3}>
           {viewed3 && (
             <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
@@ -149,20 +151,20 @@ export default function Card() {
             </div>
           )}
         </div>
-      </div>
-
-      {/* Fourth Card */}
-      <div className="flex flex-col md:flex-row-reverse sm:items-center justify-center md:justify-between w-[95%]">
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="px-12 lg:px-24"
+          className="px-4"
         >
-          <img src={image23} alt="image-4" className="w-[357px]" />
+          <img src={Group8303} alt="image-3" className="w-[557px]" />
         </div>
-        <div ref={ref4}>
+      </div>
+
+      {/* Fourth Card */}
+      <div className="flex flex-col md:flex-row-reverse sm:items-center justify-center md:justify-between w-[95%] relative gap-20 mb-16">
+        <div ref={ref4} className="flex-grow md:w-[544px] pl-4 md:px-0 text-[#20294C] mt-[-100px] ml-4">
           {viewed4 && (
-            <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
+            <div>
               <TypeAnimation
                 sequence={["Engage and Explore", 1000]}
                 cursor={true}
@@ -187,6 +189,16 @@ export default function Card() {
             </div>
           )}
         </div>
+        {inView4 && (
+          <div className="w-[500px] relative ml-4 border">
+            <div className="absolute left-0 bottom-[-100px] animation-left-to-right">
+              <img src={Group8302} alt="Group" className="w-[450px]" />
+            </div>
+            <div className="absolute left-[150px] xl:left-[200px] top-[-200px] xl:top-[-250px] animation-bottom-to-top">
+              <img src={iPhone} alt="iPhones" className="w-[250px] xl:w-[250px] z-[100]" />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

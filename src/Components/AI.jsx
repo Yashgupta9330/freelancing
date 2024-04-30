@@ -1,5 +1,6 @@
 import Button from "./Button";
 
+
 export default function AI() {
   return (
     <div className="p-[10px] md:w-[80%] lg:w-[70%] xl:w-[80%] flex flex-col items-center justify-center gap-4">
@@ -17,6 +18,7 @@ export default function AI() {
         </p>
       </div>
       <Button />
+
     </div>
   );
 }
