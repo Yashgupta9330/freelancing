@@ -12,7 +12,7 @@ export default function Hamburger() {
   };
 
   return (
-    <div className="z-[150] w-[90%] md:w-[95%] h-[300px] lg:h-[144px] flex items-center justify-end font-roboto mr-0 md:ml-4 md:ml-0 fixed top-0 left-0">
+    <div className="z-[150] w-[90%] md:w-[95%] h-[120px] md:h-[300px] lg:h-[144px] flex items-center justify-end font-roboto mr-0 md:ml-4 md:ml-0 fixed top-0 left-0">
       <div onClick={toggleNav} className="rounded-full bg-black text-[#FFFFFF] flex items-center justify-center px-4 py-4">
         {!nav ? (
           <AiOutlineMenu size={20}  className="z-[100]" />
