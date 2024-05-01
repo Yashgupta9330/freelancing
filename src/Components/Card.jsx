@@ -161,8 +161,8 @@ export default function Card() {
       </div>
 
       {/* Fourth Card */}
-      <div className="flex flex-col md:flex-row-reverse sm:items-center justify-center md:justify-between w-[95%] relative gap-20 mb-16">
-        <div ref={ref4} className="flex-grow md:w-[544px] pl-4 md:px-0 text-[#20294C] mt-[-100px] ml-4">
+      <div className="flex flex-col md:flex-row-reverse  items-center justify-center md:justify-between w-[95%] gap-12 mb-16">
+        <div ref={ref4} className="flex-grow md:w-1/2 pl-4 md:px-0 text-[#20294C]">
           {viewed4 && (
             <div>
               <TypeAnimation
@@ -190,12 +190,12 @@ export default function Card() {
           )}
         </div>
         {inView4 && (
-          <div className="w-[500px] relative ml-4 border">
-            <div className="absolute left-0 bottom-[-100px] animation-left-to-right">
-              <img src={Group8302} alt="Group" className="w-[450px]" />
-            </div>
-            <div className="absolute left-[150px] xl:left-[200px] top-[-200px] xl:top-[-250px] animation-bottom-to-top">
-              <img src={iPhone} alt="iPhones" className="w-[250px] xl:w-[250px] z-[100]" />
+          <div className="w-full sm:w-[80%] lg:w-[50%]  min-h-[300px] sm:min-h-[400px] lg:min-h-[370px]  relative  px-2 py-2">
+           <div className="absolute left-0  top-[10%] lg:top-[30%] xl:top-[20%] translate-y-1/2 animation-left-to-right">
+           <img src={Group8302} alt="Group" className="w-full" />
+           </div>
+           <div className="absolute left-1/2 top-[-10%] lg:top-[10%] xl:top-[-10%] animation-bottom-to-top">
+              <img src={iPhone} alt="iPhones" className="w-[250px] z-[100]" />
             </div>
           </div>
         )}
