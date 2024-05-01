@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home'
 import Board from './pages/Board'
+import Privacy from './Components/Privacy'
 
 
 
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Board" element={<Board/>}/>
+      <Route path='/privacy' element={<Privacy/>}/>
     </Routes>
     </div>
   </>

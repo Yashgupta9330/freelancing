@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Love from "./Love";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -11,7 +12,7 @@ export default function Navbar() {
       <div className=" w-[95%] lg:w-4/5 min-h-[85px] rounded-lg bg-[#e4dff4] bg-opacity-100 py-[24px] px-[12px] md:px-[24px] box">
         <div className="flex items-center justify-between">
           <div className="flex gap-8">
-            <span className="text-3xl font-bold text-[#20294C]">Nikaru</span>
+            <Link to="/"><span className="text-3xl font-bold text-[#20294C]">Nikaru</span></Link>
             <ul className="hidden md:flex gap-4 items-center text-normal justify-center text-[#20294C] font-medium leading-6 tracking-tighter">
               {navItems.map((item) => (
                 <li key={item}>{item}</li>
