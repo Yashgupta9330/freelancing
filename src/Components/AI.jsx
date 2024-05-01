@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function AI() {
   return (
-    <div className="p-[10px] md:w-[80%] lg:w-[70%] xl:w-[80%] flex flex-col items-center justify-center gap-4">
+    <div className="p-[10px] md:w-[80%] lg:w-[70%] xl:w-[80%] flex flex-col items-center justify-center gap-4 mb-8">
       <span className="font-bold text-5xl md:text-[80px] leading-[110%] tracking-[-3px] text-[#20294C] text-center ">
         Unravel the “Why?” with Nikaru
       </span>
