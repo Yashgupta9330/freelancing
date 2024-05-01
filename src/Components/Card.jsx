@@ -35,9 +35,9 @@ export default function Card() {
   }, [inView1, inView2, inView3, inView4, viewed1, viewed2, viewed3, viewed4]);
 
   return (
-    <div className="md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-32 md:gap-16 lg:gap-32">
+    <div className="md:max-w-[1104px] w-[95%] flex flex-col items-center justify-center gap-32">
   {/* First Card */}
-  <div className="md:w-full w-[95%] flex flex-col md:flex-row md:items-center justify-start items-start md:justify-between gap-12 mt-12">
+  <div className="md:w-full w-[95%] flex flex-col md:flex-row md:items-center justify-start items-start md:justify-between gap-12 lg:mt-12">
     <div ref={ref1} className="flex-grow md:w-1/2 pl-4 md:px-0 text-[#20294C]">
       {viewed1 && (
         <div>
@@ -66,7 +66,7 @@ export default function Card() {
     </div>
     {viewed1 && (
       <div className="w-full sm:w-[80%] md:w-[50%] min-h-[250px] sm:min-h-[400px] lg:min-h-[370px] relative px-2 py-2">
-        <div className="absolute left-0 top-[10%] md:top-0 lg:top-[30%] xl:top-[20%] translate-y-1/2" data-aos="fade-left" data-aos-duration="1000">
+        <div className="absolute left-0 top-[10%] md:top-[40%] lg:top-[30%] xl:top-[20%] translate-y-1/2" data-aos="fade-left" data-aos-duration="1000">
           <img src={Group8301} alt="Group" className="w-full"  data-aos-once="true" />
         </div>
         <div className="absolute left-1/2 top-[-10%] md:top-[20%] lg:top-[10%] xl:top-[-10%]" data-aos="fade-up" data-aos-duration="1000">
@@ -120,9 +120,9 @@ export default function Card() {
 
   {/* Third Card */}
   <div className="flex flex-col md:flex-row sm:items-center justify-center md:justify-between w-[95%] gap-16">
-    <div ref={ref3}>
+    <div ref={ref3} className="flex-grow md:w-1/2 pl-4 md:px-0 text-[#20294C]">
       {viewed3 && (
-        <div className="pl-4 md:px-0 flex flex-col md:w-[544px] text-[#20294C]">
+        <div>
           <TypeAnimation
             sequence={["Real-Time Insights", 1000]}
             cursor={true}
@@ -187,7 +187,7 @@ export default function Card() {
       )}
     </div>
     {viewed4 && (
-      <div className="w-full sm:w-[80%] md:w-[50%] min-h-[300px] sm:min-h-[400px] lg:min-h-[370px] relative px-2 py-2 mb-24">
+      <div className="w-full sm:w-[80%] md:w-[50%] min-h-[300px] sm:min-h-[400px] lg:min-h-[370px] relative px-2 py-2">
         <div className="absolute left-0 top-[10%] md:top-[40%] lg:top-[30%]  xl:top-[20%] translate-y-1/2" data-aos="fade-right" data-aos-duration="1000">
           <img src={Group8302} alt="Group" className="w-full" data-aos-once="true" />
         </div>
