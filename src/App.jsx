@@ -3,6 +3,7 @@ import './App.css'
 import Home from './Components/Home'
 import Board from './pages/Board'
 import Privacy from './Components/Privacy'
+import Terms from './Components/Terms'
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/Board" element={<Board/>}/>
       <Route path='/privacy' element={<Privacy/>}/>
+      <Route path='/terms' element={<Terms/>}/>
     </Routes>
     </div>
   </>

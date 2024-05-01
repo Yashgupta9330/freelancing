@@ -14,7 +14,7 @@ export default function Footer(){
               <div className="flex flex-col justify-evenly items-start">
 
               <Link to="/Privacy"><span>Privacy</span></Link>
-              <Link to="/Privacy"><span>Terms and Condition</span></Link>
+              <Link to="/terms"><span>Terms and Condition</span></Link>
               </div>
             </div>
             <div className="hidden md:block mt-2">
